@@ -27,7 +27,7 @@
 # book1.size()
 
 '''
-Создайте класс Student с атрибутами name, grades
+2) Создайте класс Student с атрибутами name, grades
 добавьте методы для установки и получения оценки студента
 '''
 # class Student:
@@ -49,24 +49,24 @@
 # student1.set_grade(95)
 # student1.get_grade()
 '''
-
+3) 
 '''
-class Teacher:
-    def __init__(self, name, subject) -> None:
-        self.name = name
-        self.subject = subject
+# class Teacher:
+#     def __init__(self, name, subject) -> None:
+#         self.name = name
+#         self.subject = subject
 
-    def info(self):
-        print(f'{self.name} Subject: {self.subject}')
+#     def info(self):
+#         print(f'{self.name} Subject: {self.subject}')
 
-class TeacherMath(Teacher):
-    pass
+# class TeacherMath(Teacher):
+#     pass
 
-class TeacherLang(Teacher):
-    pass
+# class TeacherLang(Teacher):
+#     pass
 
-teacher_math = TeacherMath(name='Zahar', subject='Math')
-teacher_lang = TeacherLang(name='Gaido Van Rassum', subject='Python')
+# teacher_math = TeacherMath(name='Zahar', subject='Math')
+# teacher_lang = TeacherLang(name='Gaido Van Rassum', subject='Python')
 
-teacher_math.info()
-teacher_lang.info()
+# teacher_math.info()
+# teacher_lang.info()
