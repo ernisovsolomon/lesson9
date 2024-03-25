@@ -73,13 +73,17 @@
 '''
 4)
 '''
-# class Vehicles:
-#     def __init__(self, mark, model) -> None:
-#         self.mark = mark
-#         self.model = model
+class Vehicles:
+    def __init__(self, mark, model) -> None:
+        self.mark = mark
+        self.model = model
     
-#     def start_engine(self):
-#         print(f'{self.mark}: {self.model} get started!!!')
+    def start_engine(self):
+        print(f'{self.mark}: {self.model} get started!!!')
 
-# car1 = Vehicles(mark='Toyota', model='Camry')
-# car1.start_engine()
+car1 = Vehicles(mark='Toyota', model='Camry')
+car1.start_engine()
+car1.__str__(self)
+'''
+5) 
+'''
