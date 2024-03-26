@@ -22,16 +22,19 @@
 2) Тест на знание таблицы умножения
 '''
 from random import randint
+def start_test():
+    grade = 0
+    for i in range(1, 6):
+        num1 = randint(2, 9)
+        num2 = randint(2, 9)
+        right_answer = num1 * num2
+        answer = int(input(f'Сколько будет {num1} * {num2} = x: '))
+        
+        if answer == right_answer:
+            grade += 1
+            print('Ответ верный!')
+        else:
+            print(f'Неверно! Правильный ответ: {right_answer}')
+    print(f'Вы ответили на {grade * 20}% вопросов')
 
-grade = 0
-for i in range(1, 5):
-    num1 = randint(2, 9)
-    num2 = randint(2, 9)
-    right_answer = num1 * num2
-    answer = int(input(f'Сколько будет {num1} * {num2} = x: '))
-    
-    if answer == right_answer:
-        grade += 1
-        print('Ответ верный!')
-    else:
-        print(f'Неверно! Правильный ответ: {right_answer}')
+start_test()
